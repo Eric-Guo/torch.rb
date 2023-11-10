@@ -34,6 +34,12 @@ Then run:
 bundle config build.torch-rb --with-torch-dir=/path/to/libtorch
 ```
 
+If using homebrew, LibTorch part of the PyTorch formula:
+
+```sh
+bundle config build.torch-rb --with-torch-dir=$(brew --prefix pytorch)
+```
+
 And add this line to your application’s Gemfile:
 
 ```ruby
